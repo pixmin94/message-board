@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  head
+    title hi
+  header
+    h1= 'Message Board'
+    p Please feel free to drop a message!
+  
+  main
+    each msg in messages
+      section.message-card
+        h2= msg.user
+        p.text " #{msg.text} "
+        p.added #{msg.added}
