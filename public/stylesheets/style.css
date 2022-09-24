@@ -10,3 +10,12 @@ a {
 #message-form {
   max-width: 200px;
 }
+
+.message-card {
+  margin-bottom: 20px;
+  box-shadow: 0 3px 7px #00577759;
+  padding: 10px;
+  border-radius: 5px;
+  width: 320px;
+  font-size: 1em;
+}

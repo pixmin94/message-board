@@ -23,4 +23,13 @@ router.get('/new', function(req, res, next) {
   res.render('form');
 });
 
+router.post('/new', function(req, res) {
+  messages.push({
+    user: req.body.user,
+    text: req.body.text,
+    added: new Date(),
+  });
+  res.redirect('/');
+});
+
 module.exports = router;

@@ -6,10 +6,11 @@ block content
   header
     h1= 'Message Board'
     p Please feel free to drop a message!
+    a(href='/new'): button.compose= "Add a message"
   
   main
     each msg in messages
       section.message-card
-        h2= msg.user
+        h3= msg.user + ' says:'
         p.text " #{msg.text} "
         p.added #{msg.added}
