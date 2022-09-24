@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    main
+        section.form-container
+            form(method='POST' action='/new' id='message-form')
+                input(type='text' placeholder='Name' name='user')
+                textarea(placeholder='Your message' name='text')
+                button(type='submit')= 'post'
